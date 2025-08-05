@@ -12,18 +12,10 @@
         html {
             scroll-behavior: smooth;
         }
-        .hero-content {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .hero-content img {
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        section {
-            padding: 60px 20px;
+        body {
+            margin: 0;
+            padding-top: 70px;
+            font-family: Arial, sans-serif;
         }
         header {
             background: #fff;
@@ -33,19 +25,6 @@
             top: 0;
             width: 100%;
             z-index: 100;
-        } .download-button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-        .download-button:hover {
-            background-color: #0056b3;
         }
         .container {
             width: 90%;
@@ -67,10 +46,46 @@
         nav a:hover {
             color: #007BFF;
         }
-        body {
-            margin: 0;
-            padding-top: 70px;
-            font-family: Arial, sans-serif;
+        section {
+            padding: 60px 20px;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-content img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -88,7 +103,7 @@
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -101,27 +116,11 @@
                 <div>
                     <h1>Hi, I'm <span style="color: #3498db;">Trivedi Sahil</span></h1>
                     <h2 style="color: #777;">Java & Spring Boot Developer | Fresher</h2>
-                    <p><a class="download-button" href="https://drive.google.com/file/d/1lVVuwZSWV6hgoex1YkV_O1DXT03HQTCY/view?usp=drivesdk" target="_blank">📄 Download Resume</a>
-                        <!-- <a href="https://drive.google.com/file/d/1lVVuwZSWV6hgoex1YkV_O1DXT03HQTCY/view?usp=drivesdk" target="_blank" style="text-decoration: none; color: #3498db;">📄 Download Resume</a>-->
-                        </p> 
+                    <a href="https://drive.google.com/file/d/1lVVuwZSWV6hgoex1YkV_O1DXT03HQTCY/view?usp=drivesdk" target="_blank" class="download-btn">📄 Download Resume</a>
                 </div>
-                <!-- <img src="assets/images/image.jpg" alt="Trivedi Sahil"> -->
-                <img src="assets/images/image.jpg" alt="Trivedi Sahil" style="float: left; max-width: 200px; border-radius: 10px;">
-
+                <img src="assets/images/image.jpg" alt="Trivedi Sahil">
             </div>
         </div>
     </section>
 </body>
 </html>
-
-
-<!-- Hero Section -->
-    <!-- <section id="home" class="hero">
-        <div class="container">
-            <h1>Hi, I'm <span style="color: #3498db;">Trivedi Sahil</span></h1>
-            <h2>Java & Spring Boot Developer | Fresher</h2>
-            <a class="download-button" href="https://drive.google.com/file/d/1lVVuwZSWV6hgoex1YkV_O1DXT03HQTCY/view?usp=drivesdk" target="_blank">📄 Download Resume</a>
-            <br>
-            <img src="assets/images/image.jpg" alt="Trivedi Sahil">
-        </div>
-    </section> -->
