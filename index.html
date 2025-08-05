@@ -76,17 +76,26 @@
         }
         .download-btn:hover {
             background-color: #2980b9;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
+        }@media (max-width: 768px) {
+              .profile-img {
+        max-width: 80%;
+    }
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content img {
+        margin-top: 20px;
+    }
+}
+
     </style>
 </head>
 
@@ -118,7 +127,7 @@
                     <h2 style="color: #777;">Java & Spring Boot Developer | Fresher</h2>
                     <a href="https://drive.google.com/file/d/1lVVuwZSWV6hgoex1YkV_O1DXT03HQTCY/view?usp=drivesdk" target="_blank" class="download-btn">📄 Download Resume</a>
                 </div>
-                <img src="assets/images/image.jpg" alt="Trivedi Sahil">
+                <img src="assets/images/image.jpg" alt="Trivedi Sahil" class="profile-img">
             </div>
         </div>
     </section>
